@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Check your dependencies for new version",
   "bin": {
-    "mohito": "mohito.js"
+    "mohito": "bin/mohito.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/LestaD/mohito#readme",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "npm": "^3.3.8"
   }
 }
