@@ -68,7 +68,7 @@ dev
 Update only one dependency
 
 ```bash
-$ mohito upgrade react
+$ mohito upgrade react --safe
   Get latest versions...ok
 
   Latest versions of <react> is from 0.13.3 to 0.14.4
@@ -87,9 +87,10 @@ $ mohito upgrade react
 ```
 
 Update one dependency to specified version
+> Option `--safe` ignore
 
 ```bash
-$ mohito upgrade react 0.13.4
+$ mohito upgrade react@0.13.4
   Check version 0.13.4 of <react>...ok
   Installing <react@0.13.4>...ok
 > Updated <react> from 0.13.3 to 0.13.4
