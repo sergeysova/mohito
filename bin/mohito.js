@@ -3,6 +3,7 @@
 var program = require('commander');
 var path = require('path');
 var fs = require('fs');
+var colors = require('colors');
 
 
 var currentPackage = path.join(process.cwd(), 'package.json');
@@ -17,6 +18,13 @@ catch (err) {
   console.error('Error: current directory is not NPM package.');
 }
 
+function loadPackage() {
+  return require(currentPackage);
+}
+
+var lib = require('../lib/depend');
+
+
 program
   .version(require('../package.json').version)
   .usage('<command> [options]')
@@ -26,14 +34,18 @@ program
   .command('list')
   .description('Show all package dependencies')
   .action(function(env) {
-    console.log('Show dependencies list')
+    var pkg = loadPackage();
+    lib.currentName(pkg);
+    lib.list(pkg);
   });
 
 program
   .command('updates')
   .description('Load updates for your dependencies')
   .action(function(env) {
-    console.log('Start loading dependencies updates')
+    var pkg = loadPackage();
+    lib.currentName(pkg);
+    lib.updates(pkg);
   });
 
 program

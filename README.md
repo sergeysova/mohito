@@ -1,17 +1,10 @@
 # mohito
 
-
 ## Readme
 
 Simple console utilite to update your NPM dependencies
 
 Now in dev
-
-
-
-## Roadmap
-
-commands:
 
 Get list of current dependencies:
 
@@ -25,6 +18,14 @@ dev
   conlog@1.0.4
   winston@2.1.5
 ```
+
+
+## Roadmap
+
+commands:
+
+
+
 
 Load updates for all dependencies
 
@@ -42,6 +43,7 @@ dev
 
   Check your application to stability
 ```
+
 
 Update all dependencies now
 
@@ -64,6 +66,7 @@ dev
 
   Check your application to stability
 ```
+
 
 Update only one dependency
 

@@ -1,6 +1,6 @@
 {
   "name": "mohito",
-  "version": "0.0.1-dev",
+  "version": "0.0.2-dev",
   "description": "Check your dependencies for new version",
   "bin": {
     "mohito": "bin/mohito.js"
@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/LestaD/mohito#readme",
   "dependencies": {
-    "commander": "^2.9.0",
-    "npm": "^3.3.8"
+    "ajax-promise": "^0.8.1",
+    "colors": "^1.1.2",
+    "commander": "^2.9.0"
   }
 }
