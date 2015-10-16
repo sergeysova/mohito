@@ -1,0 +1,32 @@
+{
+  "name": "mohito",
+  "version": "0.0.1",
+  "description": "Check your dependencies for new version",
+  "bin": {
+    "mohito": "mohito.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/LestaD/mohito.git"
+  },
+  "keywords": [
+    "dependencies",
+    "npm",
+    "deps",
+    "dependency",
+    "update",
+    "upgrade"
+  ],
+  "author": "LestaD <i.am@lestad.net> (Sergey Sova)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LestaD/mohito/issues"
+  },
+  "homepage": "https://github.com/LestaD/mohito#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
