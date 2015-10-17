@@ -66,10 +66,32 @@ Need write tests.
 
 commands:
 
-Update all dependencies now without confirm:
+Get info about single package:
 
 ```bash
-$ mohito upgrade
+$ mohito info react
+Package: name@1.0.1
+  Installed: 0.13.3 in 'dependencies'
+
+  Get latest versions...ok
+
+  Latest versions of <react> is from 0.13.3 to 0.14.4
+           * 0.13.3
+           * 0.13.4
+           * 0.14.0-rc1
+           * 0.14.0-rc2
+  latest > * 0.14.0
+
+  Please read <react> docs before update:
+  https://github.com/facebook/react/tree/master/npm-react
+
+```
+
+
+Update all dependencies without confirm (only with `--all` switch):
+
+```bash
+$ mohito upgrade --all
 Package: name@1.0.0
   Load updates...ok
 
@@ -90,7 +112,9 @@ dev:
 ```
 
 
-Update only one dependency
+Update only one dependency safe:
+
+> If `--safe` switch not specified, package was upgraded to latest version.
 
 ```bash
 $ mohito upgrade react --safe
@@ -111,6 +135,7 @@ Package: name@1.0.0
 > Updated <react> from 0.13.3 to 0.14.0
   Check your application to stability
 ```
+
 
 Update one dependency to specified version
 > Option `--safe` ignore
