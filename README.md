@@ -60,11 +60,13 @@ $ mohito -h
 
 ## Roadmap
 
+> Implement before `v1.0`
+
 Need write tests.
 
 commands:
 
-Update all dependencies now
+Update all dependencies now without confirm:
 
 ```bash
 $ mohito upgrade
@@ -121,6 +123,7 @@ $ mohito upgrade react@0.13.4
   Check your application to stability
 ```
 
+> Implement after `v0.9`
 
 Check each package before upgrade
 
