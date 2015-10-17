@@ -1,6 +1,6 @@
 {
   "name": "mohito",
-  "version": "0.1.1-dev",
+  "version": "0.1.2-dev",
   "description": "Check your dependencies for new version",
   "bin": {
     "mohito": "bin/mohito.js"
