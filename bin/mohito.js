@@ -5,24 +5,7 @@ var path = require('path');
 var fs = require('fs');
 var colors = require('colors');
 
-
-var currentPackage = path.join(process.cwd(), 'package.json');
-
-try {
-  var packStat = fs.lstatSync(currentPackage);
-  if (!packStat.isFile()) {
-    throw new Error();
-  }
-}
-catch (err) {
-  console.error('Error: current directory is not NPM package.');
-}
-
-function loadPackage() {
-  return require(currentPackage);
-}
-
-var lib = require('../lib');
+var commands = require('../lib/_index');
 
 
 program
@@ -41,21 +24,14 @@ program
   .command('list')
   .description('Show all package dependencies')
   .action(function(env) {
-    var pkg = loadPackage();
-    lib.currentName(pkg);
-    lib.list(pkg);
-    if (program.dev) lib.listDev(pkg);
+    commands.invokeCommand('list', program.dev, env);
   });
 
 program
   .command('updates')
   .description('Load updates for your dependencies')
   .action(function(env) {
-    var pkg = loadPackage();
-    lib.currentName(pkg);
-    lib.updates(pkg).then(function(){
-      if (program.dev) lib.updatesDev(pkg);
-    })
+    commands.invokeCommand('updates', program.dev, env);
   });
 
 program
