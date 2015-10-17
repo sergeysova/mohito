@@ -31,12 +31,12 @@ Load updates for all dependencies
 $ mohito updates --dev
 Package: name@1.0.0
   Load updates...ok
-
+base:
   react@0.13.3         new 0.14.0
   baobab@1.9.8         new 2.0.1
   baobab-react@1.9.8   new 2.0.1
   commander@1.4.1      actual
-dev
+dev:
   conlog@1.0.4         actual
   winston@2.1.5        new 3.0.2
 
@@ -73,12 +73,12 @@ Package: name@1.0.0
   Installing <baobab@2.0.1> ...ok
   Installing <baobab-react@2.0.1> ...ok
   Installing <winston@3.0.2> ...ok
-
+base:
   updated  react          0.13.3 -> 0.14.0
   updated  baobab         1.9.8 -> 2.0.1
   updated  baobab-react   1.9.8 -> 2.0.1
      kept  commander            -> 1.4.1
-dev
+dev:
      kept  conlog               -> 1.0.4
   updated  winston        2.1.5 -> 3.0.2
 
