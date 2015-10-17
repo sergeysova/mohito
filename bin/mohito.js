@@ -22,7 +22,7 @@ function loadPackage() {
   return require(currentPackage);
 }
 
-var lib = require('../lib/depend');
+var lib = require('../lib');
 
 
 program
