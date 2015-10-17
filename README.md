@@ -8,6 +8,33 @@ Simple console utilite to update your NPM dependencies
 
 Now in dev
 
+### info
+
+Get info about single package:
+
+```bash
+$ mohito info react
+Package: name@1.0.1
+  Installed: react@0.13.3 in dependencies
+
+  Get latest versions...ok
+
+  List of versions of <react> is from 0.13.3 to 0.14.0
+  current > * 0.13.3
+            * 0.14.0-alpha1
+            * 0.14.0-alpha2
+            * 0.14.0-alpha3
+            * 0.14.0-beta1
+            * 0.14.0-beta2
+            * 0.14.0-beta3
+            * 0.14.0-rc1
+   latest > * 0.14.0
+
+  Please read <react> docs before update:
+  https://github.com/facebook/react/tree/master/npm-react
+
+```
+
 ### list
 
 Get list of current dependencies:
@@ -66,26 +93,6 @@ Need write tests.
 
 commands:
 
-Get info about single package:
-
-```bash
-$ mohito info react
-Package: name@1.0.1
-  Installed: 0.13.3 in 'dependencies'
-
-  Get latest versions...ok
-
-  Latest versions of <react> is from 0.13.3 to 0.14.4
-           * 0.13.3
-           * 0.13.4
-           * 0.14.0-rc1
-           * 0.14.0-rc2
-  latest > * 0.14.0
-
-  Please read <react> docs before update:
-  https://github.com/facebook/react/tree/master/npm-react
-
-```
 
 
 Update all dependencies without confirm (only with `--all` switch):
