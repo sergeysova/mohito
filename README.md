@@ -4,6 +4,8 @@
 
 Simple console utilite to update your NPM dependencies
 
+![https://raw.githubusercontent.com/LestaD/mohito/master/mohito.png](https://raw.githubusercontent.com/LestaD/mohito/master/mohito.png)
+
 Now in dev
 
 ### list
