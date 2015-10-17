@@ -6,31 +6,30 @@ Simple console utilite to update your NPM dependencies
 
 Now in dev
 
+### list
+
 Get list of current dependencies:
 
 ```bash
-$ mohito # or `mohito list`
+$ mohito list --dev
+Package: name@1.0.0
+base:
   react@0.13.3
   baobab@1.9.8
   baobab-react@1.9.8
   commander@1.4.1
-dev
+dev:
   conlog@1.0.4
   winston@2.1.5
 ```
 
-
-## Roadmap
-
-commands:
-
-
-
+### updates
 
 Load updates for all dependencies
 
 ```bash
-$ mohito updates
+$ mohito updates --dev
+Package: name@1.0.0
   Load updates...ok
 
   react@0.13.3         new 0.14.0
@@ -44,11 +43,30 @@ dev
   Check your application to stability
 ```
 
+### help
+
+To get help
+
+```bash
+$ mohito help
+
+$ mohito --help
+
+$ mohito -h
+```
+
+
+## Roadmap
+
+Need write tests.
+
+commands:
 
 Update all dependencies now
 
 ```bash
 $ mohito upgrade
+Package: name@1.0.0
   Load updates...ok
 
   Installing <react@0.14.0> ...ok
@@ -72,6 +90,7 @@ Update only one dependency
 
 ```bash
 $ mohito upgrade react --safe
+Package: name@1.0.0
   Get latest versions...ok
 
   Latest versions of <react> is from 0.13.3 to 0.14.4
@@ -105,6 +124,7 @@ Check each package before upgrade
 
 ```bash
 $ mohito upgrade --safe
+Package: name@1.0.0
   Load updates...ok
 
 > Has update for <react>:

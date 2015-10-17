@@ -28,7 +28,14 @@ var lib = require('../lib/depend');
 program
   .version(require('../package.json').version)
   .usage('<command> [options]')
-  .option('--safe', 'Open confirm request for each version');
+  .option('--safe', 'Open confirm request for each version'.green)
+  .option('--dev', 'Apply command for devDependencies too'.green);
+
+program
+  .command('help')
+  .action(function() {
+    program.help();
+  });
 
 program
   .command('list')
@@ -37,6 +44,7 @@ program
     var pkg = loadPackage();
     lib.currentName(pkg);
     lib.list(pkg);
+    if (program.dev) lib.listDev(pkg);
   });
 
 program
@@ -45,12 +53,14 @@ program
   .action(function(env) {
     var pkg = loadPackage();
     lib.currentName(pkg);
-    lib.updates(pkg);
+    lib.updates(pkg).then(function(){
+      if (program.dev) lib.updatesDev(pkg);
+    })
   });
 
 program
   .command('upgrade [package@1.0.0]')
-  .description('Update dependency or all dependencies')
+  .description('Update dependency or all dependencies (UNRELEASED)'.red)
   .option('--safe', 'Check each dependency')
   .action(function(package, env) {
     if (package) {
