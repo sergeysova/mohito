@@ -21,6 +21,13 @@ program
   });
 
 program
+  .command('info <package>')
+  .description('Show info about single package')
+  .action(function(p, env) {
+    commands.invokeCommand('info', true, {name: p});
+  });
+
+program
   .command('list')
   .description('Show all package dependencies')
   .action(function(env) {
