@@ -2,7 +2,10 @@
 
 ![https://raw.githubusercontent.com/LestaD/mohito/master/mohito.png](https://raw.githubusercontent.com/LestaD/mohito/master/mohito.png)
 
-[![bitHound Overalll Score](https://www.bithound.io/github/LestaD/mohito/badges/score.svg)](https://www.bithound.io/github/LestaD/mohito)
+ [![bitHound Overalll Score](https://www.bithound.io/github/LestaD/mohito/badges/score.svg)](https://www.bithound.io/github/LestaD/mohito)
+ ![Dependencies](https://david-dm.org/lestad/mohito.svg)
+ ![npm version](https://badge.fury.io/js/mohito.svg)
+ ![GitHub tag](https://img.shields.io/github/tag/lestad/mohito.svg)
 
 ## Readme
 
