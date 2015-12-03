@@ -2,6 +2,8 @@
 
 ![https://raw.githubusercontent.com/LestaD/mohito/master/mohito.png](https://raw.githubusercontent.com/LestaD/mohito/master/mohito.png)
 
+[![bitHound Overalll Score](https://www.bithound.io/github/LestaD/mohito/badges/score.svg)](https://www.bithound.io/github/LestaD/mohito)
+
 ## Readme
 
 Simple console utilite to update your NPM dependencies
