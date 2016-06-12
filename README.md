@@ -11,7 +11,9 @@
 
 Simple console utilite to update your NPM dependencies
 
-Now in dev
+
+[![](https://asciinema.org/a/48643.png)](https://asciinema.org/a/48643?autoplay=true)
+
 
 ### info
 
@@ -199,5 +201,3 @@ Package: name@1.0.0
 
   Check your application to stability
 ```
-
-
